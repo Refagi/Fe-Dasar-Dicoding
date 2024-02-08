@@ -1,0 +1,172 @@
+Window Event :
+ adalah kejadian - kejadian yang berasal dari browser alisa pada windoem
+
+- onload : 
+event ini akan terjadi setelah halaman web selesai diunduh dan ditampilkan
+
+- onpageshow :
+event ini akan terjadi jika halama web
+ kembali dikunjungi kembali(berbeda dengan onload karena event onload tidak 
+ akan terjadi jika halaman web diambil dari cache)
+
+- onrize : 
+event ini akan terjadi jika Window
+ browser di-resize oleg user atau oleh hal lainnya 
+
+
+
+Form Event :
+ adalah kejadian- kejadian yan' berasal dari sebuah elemen HTML dengan
+ tag <form></form> (kita akan mempraktikan penggunaan tag <form></form>) pada materi
+ Form event
+
+ - onreset : 
+event ini akan terjadi ketika user menekan tombol "reset" pada element form
+
+- onsubmit : 
+event ini akan terjadi ketika user menekan tombol "submit" pada form
+
+
+
+Keyboard Event :
+adalah kejadian - kejadian yang berasal daro ditekan atau di lepasnya tombol pada Keyboard
+
+-onkeydown :
+event ini akan terjadi ketika sebuah tombol pada Keyboard di tekan
+
+-onkeypress :
+event ini akan terjadi setelah onkeydown, di mana tombol masih dalam keadaan ditekan.
+event ini tidak dapat mendeteksi tombol fungsi seperti CTRL, SHIFT, 
+ALT, ESC, BACKSPACE, dan sebagainnya
+
+-onkeyup : 
+event ini akan terjadi ketika sebuah tombl pada Keyboard di lepas
+
+
+
+Clipboard Event :
+adalah kejadian - keadaan yang berasal dari proces cut , copy, atau paste sebuah element
+
+-oncopy :
+event ini akan terjadi ketika kita melakukan proces copy
+
+-oncut :
+event ini akan terjadi ketika melakukan proces cut
+
+-onpaste : event ini akan terjadi ketika kita melakukan proces paste
+
+
+
+Mouse Event : 
+adalah kejadian- kejadian yang berasal dari kegiatan klik Mouse
+
+-onclick : 
+event ini akan terjadi ketika kita menekan element tertentu dengan cursor
+
+-ondblclick : 
+event ini akan terjadi ketika kita menekan element tertentu dua kali 
+berturut - turut dengan cursor
+
+-onmouseover : 
+event ini akan terjadi ketika cursor kita berbeda di atas sebuah elemen tertentu
+
+-onsubmit :
+event ini akan terjadi ketika kita akan menekan tombol submit milik sebuah form
+
+-oninput : 
+event ini akan terjadi jika kita memberikan input melalalui field
+
+-onchange :
+evenet ini akan terjadi jika kita sudah selesai memberikan input melalalui field.
+bisa juga diaplikasikan ke element select (dropdown menu)
+
+-oncopy :
+event ini akan terjadi jika kita menyalin (copy) isi dari sebuah elemen
+
+onpaste : 
+evenet ini akan terjadi jika kita menempel (paste) isi dari hasil salin (copy) pada sebuah teks
+
+-onfocus :
+event ini akan terjadi jika sebuah elemen pada form dopilih untuk dilakukan proces input
+
+-onblur : 
+evenet ini akan terjadi jika sebuah elemen pada form tidak dipilih lagi untuk
+dilakukan proces input
+
+
+
+
+
+Rangkuman Browser Object Model & Document Object Model
+
+-Browser Object Model (BOM):
+Objek JavaScript yang tersedia di browser yang dapat digunakan untuk mengontrol browser.
+
+-Member dari BOM yang sering digunakan:
+alert: Menampilkan pop-up pesan pada browser.
+prompt: Menampilkan  pop-up pesan yang dapat menerima input dari pengguna.
+console: Menampilkan pesan atau nilai pada console browser.
+
+-Document Object Model (DOM):
+Objek JavaScript yang tersedia di browser yang dapat digunakan untuk mengontrol dan memanipulasi konten yang ditampilkan pada website.
+
+-DOM Tree:
+Struktur Website dalam bentuk JavaScript objek yang terbentuk seperti bagan pohon.
+DOM Tree terbentuk berdasarkan dari struktur berkas HTML.
+
+-Teknik manipulasi DOM:
+Mendapatkan Elemen: document.querySelector, document.querySelectorAll, document.getElementById, dan sebagainya.
+Membuat Elemen: document.createElement.
+Mengubah Konten: element.innerHTML, element.innerText, element.setAttribute(), dan sebagainya.
+Menambahkan Element: element.appendChild.
+
+
+Rangkuman Interaktif dengan Event
+
+-Macam-macam Event:
+Window Event
+Form Event
+Keyboard Event
+Clipboard Event
+Mouse Event
+
+-Menambahkan Event Handler pada HTML Element:
+Menggunakan method element.addEventListener
+
+-Custom Event:
+Merupakan Event yang nama dan cara membangkitkannya ditentukan oleh kita sendiri.
+
+-Konsep Event Bubbling dan Event Capturing:
+Event Bubbling: Event yang terjadi dari element dalam ke element luar.
+Event Capturing: Event yang terjadi dari element luar ke element dalam.
+Event pada elemen <form>:
+onSubmit: Event yang dibangkitkan ketika tombol submit pada form ditekan.
+Event pada elemen <input>:
+onInput:  Event yang dibangkitkan setiap kali menulis atau menghapus nilai pada elemen input.
+onFocus: Event yang dibangkitkan ketika elemen input dalam keadaan fokus.
+onBlur: Event yang dibangkitkan ketika elemen input dalam keadaan fokus berubah menjadi tidak fokus.
+onChange: Event yang dibangkitkan ketika nilai elemen input berubah.
+onCopy: Event yang dibangkitkan ketika pengguna men-copy nilai dari input.
+onPaste: Event yang dibangkitkan ketika pengguna men-paste nilai pada input.
+
+
+Rangkuman Penyimpanan Data dengan Web Storage
+
+-Web Storage
+Merupakan salah satu Browser API yang digunakan untuk menyimpan data dengan pola key-value.
+Web Storage dapat menampung data maksimal 10MB per domain.
+
+-Fungsi dari Web Storage
+Menyimpan data dalam bentuk string yang dihasilkan oleh halaman web agar bisa diakses secara offline.
+Cocok juga untuk menyimpan data konfigurasi preference untuk pengguna web.
+
+-Macam-macam Web Storage
+Local Storage: Digunakan untuk menyimpan data tanpa ada batasan waktu. Data yang disimpan tidak akan hilang bila browser atau tabs browser ditutup kecuali jika kita menghapusnya.
+Session Storage: Digunakan untuk menyimpan data sementara pada browser. Data akan hilang ketika browser atau tab browser ditutup.
+
+Fungsi-fungsi yang ada pada Web Storage:
+setItem: Digunakan untuk menyimpan data pada Web Storage. Fungsi ini membutuhkan dua parameter yakni key (sebagai kunci untuk mendapatkan nilai) dan value (sebagai nilai yang akan disimpan).
+getItem: Digunakan untuk mengakses data pada Web Storage. Fungsi ini membutuhkan satu parameter yakni key (sebagai kunci untuk mendapatkan nilai) dan data yang disimpan pada Web Storage akan dikembalikan dalam bentuk string.
+Menyimpan dan Mendapatkan Data Kompleks pada Web Storage:
+Untuk menyimpan data kompleks seperti objek JavaScript dapat dilakukan dengan mengubah objek menjadi string menggunakan JSON.stringify().
+Untuk mendapatkan data kompleks seperti objek JavaScript dari Web Storage dapat dilakukan dengan mengubah string objek menjadi objek menggunakan JSON.parse().

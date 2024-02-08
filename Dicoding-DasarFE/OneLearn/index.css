@@ -1,0 +1,32 @@
+*.html {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#main {
+  margin: 2px;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.button {
+    width: 200px;
+    font-size: 15px;
+    margin: 8px;
+    padding: 3px;
+  }
+
+
+#styleHr{
+    size: 2px;
+    width: 95%;
+    color: black;
+}
+
